@@ -1,2 +1,3 @@
 ---
 sysctl_config_files: [] # -> /etc/sysctl.d/
+sysctl_config_vars: {} # dictionary
