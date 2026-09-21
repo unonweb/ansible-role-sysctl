@@ -1,0 +1,6 @@
+# {{ ansible_managed }}
+# Custom sysctl configuration generated via Ansible
+
+{% for key, value in sysctl_config_vars.items() %}
+{{ key }} = {{ value }}
+{% endfor %}
