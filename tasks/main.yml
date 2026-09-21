@@ -1,7 +1,6 @@
 ---
 - name: sysctl role
-  tags:
-    - sysctl
+  tags: [sysctl]
   block:
 
   # assert
