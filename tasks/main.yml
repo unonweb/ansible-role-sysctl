@@ -15,6 +15,7 @@
   # template
   - name: Template /etc/sysctl.d/99-ansible.conf
     when: sysctl_config_vars | length > 0
+    become: true
     ansible.builtin.template:
       src: sysctl-ansible.conf.j2
       dest: /etc/sysctl.d/99-ansible.conf
